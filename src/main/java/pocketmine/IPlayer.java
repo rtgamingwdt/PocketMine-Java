@@ -1,28 +1,28 @@
-
 package pocketmine;
 
 import pocketmine.permission.ServerOperator;
 import pocketmine.metadata.Metadatable;
 
-public interface IPlayer extends ServerOperator, Metadatable {
+public interface IPlayer extends ServerOperator, Metadatable
+{
 
-	boolean isOnline();
+  boolean isOnline ();
 
-	String getName();
+  String getName ();
 
-	boolean isBanned();
+  boolean isBanned ();
 
-	void setBanned(boolean value);
+  void setBanned (boolean value);
 
-	boolean isWhitelisted();
+  boolean isWhitelisted ();
 
-	void setWhitelisted(boolean value);
+  void setWhitelisted (boolean value);
 
-	Player getPlayer();
+  Player getPlayer ();
 
-	Long getFirstPlayed();
+  Long getFirstPlayed ();
 
-	Long getLastPlayed();
+  Long getLastPlayed ();
 
-	boolean hasPlayedBefore();
+  boolean hasPlayedBefore ();
 }
